@@ -25,9 +25,14 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
     use traits\Movable;
 
     /**
+     * @var array
+     */
+    protected $attributes = [];
+
+    /**
      *
      */
-    public function body()
+    public function body(array $paramData = null)
     {
 
     }

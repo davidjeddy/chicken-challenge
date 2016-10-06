@@ -13,3 +13,6 @@
     https://www.vagrantup.com/docs/virtualbox/configuration.html
 2115 composer usage minimized to auto-generating the initial class map
 2135 Working on a generic auto loader...'cause OOP
+2210 Core functionality complete, taking a break.
+    - Left to do: randomly assign attributes each run
+    - Write some Unit test coverage per spec.

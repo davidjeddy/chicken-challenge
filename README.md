@@ -31,16 +31,17 @@ IF Vagrant is available:
 
     vagrant up
     vagrant ssh
-    cd /var/www/html
+    cd /var/www/html/src/
 
-ELSE If host machine offers PHP 5.6+ AND composer
+ELSE If host machine offers PHP 5.6+
  
     cd {project root}
-    php composer.phar install -o -v
 
 THEN
 
-    php -S localhost:8080
-    php index.php
-    
-Dont forget to use `sudo` where applicable, IE composer install.
+    php -f index.php
+
+# Side Note
+I'd like to point out that one requirement is 'no external dependencies',
+however to run PHPUnit one must obtain it, thus breaking the prev. stated
+requirements.
