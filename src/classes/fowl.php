@@ -25,14 +25,20 @@ class Fowl
     protected $knownAs;
 
     /**
-     * @param $property
-     * @param $value
+     * @param      $property
+     * @param null $value
      *
      * @return bool
      */
-    public function set($property, $value)
+    public function set($property, $value = null)
     {
-        $this->{$property} = $value;
+        if (is_array($property) && $value === null) {
+            foreach ($property as $key => $value) {
+                $this->set($key, $value);
+            }
+        } else {
+            $this->{$property} = $value;
+        }
 
         return true;
     }
