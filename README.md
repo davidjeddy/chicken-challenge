@@ -56,12 +56,17 @@ Now we can test
 To ensure PSR-2 compliant occasionally run the following
 
     wget https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
-    
-## Report
-    php phpcs.phar --standard=PSR2 ./
-## Auto fixing
     php phpcs.phar --standard=PSR2 --ignore=*/vendor/* --report-diff=./PSR2.diff ./
     patch -p0 -ui ./PSR2.diff
+
+# Bonus
+Auto generated SAPI documentation
+
+    wget http://www.phpdoc.org/phpDocumentor.phar
+    php phpDocumentor.phar -s ./src -d ./sapi -i ./test
+    
+To view visit ./sapi/index.html 
+ or if using the vagrant machine: http://192.168.33.50/sapi/
     
 # Side Note
 I'd like to point out that one requirement is 'no external dependencies',
