@@ -1,15 +1,24 @@
 <?php
 
-namespace davidjeddy;
+namespace src;
 
 /**
  * Class chicken
  *
  * @package davidjeddy
  */
-class chicken extends classes\fowl implements interfaces\farmAnimal{
+class Chicken extends classes\Fowl implements interfaces\FarmAnimal
+{
+    /**
+     *
+     */
+    use traits\Audible;
 
-    CONST 
+    /**
+     *
+     */
+    use traits\Move;
+
     /**
      *
      */

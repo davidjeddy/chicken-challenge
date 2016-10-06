@@ -1,13 +1,13 @@
 <?php
 
-namespace davidjeddy\interfaces;
+namespace src\interfaces;
 
 /**
  * Interface farmAnimal
  *
  * @package davidjeddy
  */
-interface farmAnimal {
+interface FarmAnimal {
 
     /**
      * @return mixed

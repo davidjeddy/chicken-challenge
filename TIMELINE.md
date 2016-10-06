@@ -6,3 +6,4 @@
 
 1940 Break time, UPS delivery
 2000 Back to slinging code
+2030 init class / trait / interface setup
