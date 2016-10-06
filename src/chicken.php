@@ -23,20 +23,6 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
     public $attributes;
 
     /**
-     * Chicken constructor.
-     *
-     * @param $paramData
-     */
-    public function __construct($paramData)
-    {
-        if (is_array($paramData)) {
-            foreach ($paramData as $key => $value) {
-                $this->set($key, $value);
-            }
-        }
-    }
-
-    /**
      *
      */
     public static function className()

@@ -6,7 +6,9 @@ $movementType = ['walking', 'fluttering', 'hopping'];
 $soundType = ['cluck', 'cakaa', 'peek'];
 
 // create a chicken
-$chicken = new Chicken([
+$chicken = new Chicken();
+
+$chicken->set([
     'attributes' => [
         'color' => 'yellow',
         'legs'  => 'thin legged',
