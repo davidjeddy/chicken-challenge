@@ -1,12 +1,9 @@
 <?php
 
-namespace src\traits;
-
-// manual loading of classes
-require_once './classes/ErrorChecking.php';
+namespace traits;
 
 // auto loading of classes
-use src\classes\ErrorChecking;
+use classes\ErrorChecking;
 
 /**
  * Class Movable

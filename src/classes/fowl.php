@@ -1,6 +1,6 @@
 <?php
 
-namespace src\classes;
+namespace classes;
 
 /**
  * Class fowl
@@ -31,5 +31,10 @@ class Fowl
     public function set($property, $value)
     {
         $this->{$property} = $value;
+    }
+
+    public function get($property)
+    {
+        return $this->{$property};
     }
 }

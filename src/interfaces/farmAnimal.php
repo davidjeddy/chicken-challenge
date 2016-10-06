@@ -1,6 +1,6 @@
 <?php
 
-namespace src\interfaces;
+namespace interfaces;
 
 /**
  * Interface farmAnimal
