@@ -1,12 +1,5 @@
 <?php
 
-namespace src;
-
-require_once './classes/Fowl.php';
-require_once './interfaces/FarmAnimal.php';
-require_once './traits/Audible.php';
-require_once './traits/Movable.php';
-
 /**
  * Class chicken
  *

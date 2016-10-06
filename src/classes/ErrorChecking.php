@@ -1,6 +1,6 @@
 <?php
 
-namespace src\classes;
+namespace classes;
 
 /**
  * Class ErrorChecking
