@@ -17,4 +17,6 @@
     - Left to do: randomly assign attributes each run
     - Write some Unit test coverage per spec.
 2310 Break time.
-233 back to it, adding basic functionality to Chicken class
+2330 back to it, adding basic functionality to Chicken class
+0000 Time over, sadly could not figure out why PHPUnit is throwing an
+    error on any second usage of $this->asserts*()
