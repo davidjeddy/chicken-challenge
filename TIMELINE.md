@@ -1,9 +1,9 @@
+# Timeline
+
 1900 started project
     setup Vagrant ENV to ensure 'run anywhere'
     ADDED project documentation and dependency files
-
 1930 began initial class, interface and trait development
-
 1940 Break time, UPS delivery
 2000 Back to slinging code
 2030 init class / trait / interface setup
@@ -16,3 +16,4 @@
 2210 Core functionality complete, taking a break.
     - Left to do: randomly assign attributes each run
     - Write some Unit test coverage per spec.
+2110 Break time.

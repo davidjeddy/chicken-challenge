@@ -22,7 +22,7 @@ tests.
  
 # Installation
 
-    cd /{project root}
+    cd {project root}
     git clone 
 
 # Run
@@ -49,7 +49,7 @@ Testing requires PHPUnit, easiest way to get PHPUnit is via composer
 
 Now we can test 
 
-    php phpunit.phar
+    php phpunit.phar --bootstrap ./src/autoloader.php -c ./tests/phpunit.xml
     
 # Side Note
 I'd like to point out that one requirement is 'no external dependencies',
