@@ -18,15 +18,40 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
     use traits\Movable;
 
     /**
-     * @var array
+     * @var
      */
-    protected $attributes = [];
+    public $attributes;
+
+    /**
+     * Chicken constructor.
+     *
+     * @param $paramData
+     */
+    public function __construct($paramData)
+    {
+        if (is_array($paramData)) {
+            foreach ($paramData as $key => $value) {
+                $this->set($key, $value);
+            }
+        }
+    }
 
     /**
      *
      */
+    public static function className()
+    {
+        return (string)__CLASS__;
+    }
+
+    /**
+     * @param array|null $paramData
+     *
+     * @return $this
+     */
     public function body(array $paramData = null)
     {
+        return $this;
     }
 
     /**
@@ -34,6 +59,9 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function face()
     {
+        echo 'Has a rooster face';
+
+        return $this;
     }
 
     /**
@@ -41,13 +69,7 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function legs()
     {
-    }
-
-    /**
-     *
-     */
-    public function sound()
-    {
+        return $this->legs;
     }
 
     /**
@@ -55,6 +77,7 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function tail()
     {
+        return $this;
     }
 
     /**
@@ -62,5 +85,6 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function color()
     {
+        return $this;
     }
 }

@@ -10,7 +10,6 @@ use classes\ErrorChecking;
  */
 trait Movable
 {
-
     /**
      * @param array|null $paramData
      *
@@ -20,6 +19,9 @@ trait Movable
     {
         ErrorChecking::checkRequirements(['direction', 'time', 'velocity', 'method'], $paramData);
 
-        return $paramData;
+        echo  'The ' . $this::className() . ' moves ' . $paramData['direction'] . ' for ' . $paramData['time'] . ' as a velocity of '
+            . $paramData['velocity'] . ' by ' . $paramData['method'] . ".\n";
+
+        return $this;
     }
 }

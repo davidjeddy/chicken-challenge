@@ -25,16 +25,29 @@ class Fowl
     protected $knownAs;
 
     /**
-     * @param string $property
-     * @param string $value
+     * @param $property
+     * @param $value
+     *
+     * @return bool
      */
     public function set($property, $value)
     {
         $this->{$property} = $value;
+
+        return true;
     }
 
+    /**
+     * @param $property
+     *
+     * @return mixed
+     */
     public function get($property)
     {
+        if (is_array($property)) {
+            return implode(', ', $property);
+        }
+
         return $this->{$property};
     }
 }

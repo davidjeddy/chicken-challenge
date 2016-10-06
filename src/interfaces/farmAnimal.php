@@ -28,11 +28,6 @@ interface FarmAnimal
     /**
      * @return mixed
      */
-    function sound();
-
-    /**
-     * @return mixed
-     */
     function tail();
 
     /**

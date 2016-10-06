@@ -19,7 +19,7 @@ class ErrorChecking
     public static function checkRequirements(array $requiredKeys, array $paramData)
     {
         foreach ($requiredKeys as $value) {
-            if (!array_key_exists('direction', $paramData)) {
+            if (!array_key_exists($value, $paramData)) {
                 throw new \Exception('Method required ' . $value . ' be provided in the parameter array.');
             }
         }

@@ -16,4 +16,5 @@
 2210 Core functionality complete, taking a break.
     - Left to do: randomly assign attributes each run
     - Write some Unit test coverage per spec.
-2110 Break time.
+2310 Break time.
+233 back to it, adding basic functionality to Chicken class
