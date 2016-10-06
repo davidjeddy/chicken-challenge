@@ -23,7 +23,7 @@
   },
   "config": {
     "process-timeout": 1800,
-    "vendor-dir": "protected/vendor",
-    "bin-dir": "protected/vendor/bin"
+    "vendor-dir": "vendor",
+    "bin-dir": "vendor/bin"
   }
 }
