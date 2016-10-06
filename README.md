@@ -22,7 +22,7 @@ tests.
  
 # Installation
 
-    cd /{project root}
+    cd {project root}
     git clone 
 
 # Run
@@ -41,6 +41,16 @@ THEN
 
     php -f index.php
 
+# Testing
+Testing requires PHPUnit, easiest way to get PHPUnit is via composer
+
+    cd {project root}
+    wget https://phar.phpunit.de/phpunit.phar
+
+Now we can test 
+
+    php phpunit.phar --bootstrap ./src/autoloader.php -c ./tests/phpunit.xml
+    
 # Side Note
 I'd like to point out that one requirement is 'no external dependencies',
 however to run PHPUnit one must obtain it, thus breaking the prev. stated
