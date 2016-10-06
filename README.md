@@ -50,6 +50,18 @@ Testing requires PHPUnit, easiest way to get PHPUnit is via composer
 Now we can test 
 
     php phpunit.phar --bootstrap ./src/autoload.php -c ./tests/phpunit.xml
+   
+# Coding style
+
+To ensure PSR-2 compliant occasionally run the following
+
+    wget https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+    
+## Report
+    php phpcs.phar --standard=PSR2 ./
+## Auto fixing
+    php phpcs.phar --standard=PSR2 --ignore=*/vendor/* --report-diff=./PSR2.diff ./
+    patch -p0 -ui ./PSR2.diff
     
 # Side Note
 I'd like to point out that one requirement is 'no external dependencies',

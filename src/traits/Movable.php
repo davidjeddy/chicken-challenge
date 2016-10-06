@@ -8,7 +8,8 @@ use classes\ErrorChecking;
 /**
  * Class Movable
  */
-trait Movable {
+trait Movable
+{
 
     /**
      * @param array|null $paramData

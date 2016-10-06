@@ -7,7 +7,8 @@ namespace interfaces;
  *
  * @package davidjeddy
  */
-interface FarmAnimal {
+interface FarmAnimal
+{
 
     /**
      * @return mixed
