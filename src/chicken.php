@@ -27,7 +27,6 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function body(array $paramData = null)
     {
-
     }
 
     /**
@@ -35,7 +34,6 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function face()
     {
-
     }
 
     /**
@@ -43,7 +41,6 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function legs()
     {
-
     }
 
     /**
@@ -51,7 +48,6 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function sound()
     {
-
     }
 
     /**
@@ -59,7 +55,6 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function tail()
     {
-
     }
 
     /**
@@ -67,6 +62,5 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
      */
     public function color()
     {
-
     }
 }

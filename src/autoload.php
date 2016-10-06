@@ -3,8 +3,7 @@
 /**
  * Auto loader provided by http://stackoverflow.com/questions/20681689/how-to-use-spl-autoload-register-for-multiple-diectories-in-php
  */
-spl_autoload_register( function ($className)
-{
+spl_autoload_register(function ($className) {
     $className = ltrim($className, '\\');
     $fileName  = '';
     $namespace = '';
