@@ -2,6 +2,11 @@
 
 namespace src;
 
+require_once './classes/Fowl.php';
+require_once './interfaces/FarmAnimal.php';
+require_once './traits/Audible.php';
+require_once './traits/Movable.php';
+
 /**
  * Class chicken
  *
@@ -17,7 +22,7 @@ class Chicken extends classes\Fowl implements interfaces\FarmAnimal
     /**
      *
      */
-    use traits\Move;
+    use traits\Movable;
 
     /**
      *

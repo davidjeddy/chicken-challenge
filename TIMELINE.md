@@ -11,4 +11,5 @@
     - updated vagrantFile to allow VM 1024MB of memory, solved via:
     https://github.com/composer/composer/issues/1959
     https://www.vagrantup.com/docs/virtualbox/configuration.html
-
+2115 composer usage minimized to auto-generating the initial class map
+2135 Working on a generic auto loader...'cause OOP

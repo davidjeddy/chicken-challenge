@@ -1,3 +1,6 @@
 <?php
-// get composer autoloader
-// append app classes
+require_once './Chicken.php';
+
+$chicken = new src\Chicken();
+
+echo 'asdf';
