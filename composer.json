@@ -1,7 +1,10 @@
 {
   "name": "davidjeddy/chickenChallenge",
   "description": "Create a chicken in 4 hours.",
-  "keywords": ["chicken", "challenge"],
+  "keywords": [
+    "chicken",
+    "challenge"
+  ],
   "homepage": "https://github.com/davidjeddy/chickenChallenge.git",
   "type": "application",
   "license": "MIT",
@@ -10,20 +13,26 @@
   },
   "minimum-stability": "alpha",
   "require": {
-    "php"             : ">=5.6.0",
-    "e96/yii2-sentry" : "dev-master as 1.0",
-    "vlucas/phpdotenv": "^2.4"
+    "php"               : ">=5.6.0",
+    "e96/yii2-sentry"   : "dev-master as 1.0",
+    "vlucas/phpdotenv"  : "^2.4",
+    "hirak/prestissimo" : "^0.3"
   },
   "require-dev": {
-    "codeception/codeception"       : "~2.0",
-    "codeception/specify"           : "~0",
-    "codeception/verify"            : "~0",
-    "fzaninotto/faker"              : "~1.5",
-    "phpdocumentor/phpdocumentor"   : "2.*"
+    "codeception/codeception": "~2.0",
+    "codeception/specify": "~0",
+    "codeception/verify": "~0",
+    "fzaninotto/faker": "~1.5",
+    "phpdocumentor/phpdocumentor": "2.*"
   },
   "config": {
-    "process-timeout": 1800,
-    "vendor-dir": "vendor",
-    "bin-dir": "vendor/bin"
+    "bin-dir": "./vendor/bin",
+    "process-timeout": 1800
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
   }
 }

@@ -7,13 +7,19 @@ PASSWORD='12345678'
 # create project folder
 # sudo mkdir "/var/www/html/${PROJECTFOLDER}"
 
+# add PPA for PHP5.6+ and other related newer(ish)
+sudo add-apt-repository ppa:ondrej/php5-5.6
+sudo apt-get install python-software-properties
+
 # update / upgrade
 sudo apt-get update
 sudo apt-get -y upgrade
 
-# install apache 2.5 and php 5.5
+# install apache 2.5 and php 5.6
 sudo apt-get install -y apache2
 sudo apt-get install -y php5
+sudo apt-get install htop
+sudo apt-get install multitail
 
 # install mysql and give password to installer
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
