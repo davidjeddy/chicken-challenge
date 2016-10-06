@@ -20,6 +20,7 @@ sudo apt-get install -y apache2
 sudo apt-get install -y php5
 sudo apt-get install htop
 sudo apt-get install multitail
+sudo apt-get install git
 
 # install mysql and give password to installer
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"

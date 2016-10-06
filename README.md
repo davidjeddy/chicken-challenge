@@ -1,10 +1,24 @@
 # Overview
 Chicken Challenge
 
+# Requirements
+Create a PHP class or classes that instantiate an object that represents
+a chicken (the animal). Your chicken class should demonstrate understanding
+of object oriented programming principles including (but not limited to)
+ - inheritance
+ - encapsulation
+ - single-responsibility.
+ 
+Your chicken must be able to be run through a PHP interpreter without any
+external dependencies. It should follow PSR-2 standards and include unit
+tests.
+
 # Assumptions
  - No PHP extension outside of the SPL of PHP 5.6
- - 3rd part PHP library's are permitted
+ - PHP, GiT, Terminal are accessible
  - 4 hours time limit
+ - Composer can be used to generate the application class auto loader
+ - Composer can be used to check PHP minimal requirements
  
 # Installation
 
@@ -22,11 +36,11 @@ IF Vagrant is available:
 ELSE If host machine offers PHP 5.6+ AND composer
  
     cd {project root}
+    php composer.phar install -o -v
 
 THEN
 
     php -S localhost:8080
-    php composer.phar install -o -v
     php index.php
     
 Dont forget to use `sudo` where applicable, IE composer install.
