@@ -6,9 +6,9 @@ namespace traits;
 use classes\ErrorChecking;
 
 /**
- * Class Movable
+ * Class Move
  */
-trait Movable
+trait Move
 {
     /**
      * @param array|null $paramData

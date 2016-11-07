@@ -5,9 +5,8 @@
  *
  * @package davidjeddy
  */
-class Chicken extends classes\Fowl
+class Chicken extends \classes\Fowl
 {
-
     /**
      * @var
      */

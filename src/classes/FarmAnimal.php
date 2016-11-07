@@ -4,49 +4,59 @@ namespace classes;
 
 class FarmAnimal implements \interfaces\Animal
 {
+    use \traits\Defecate;
+    use \traits\Eat;
+    use \traits\Move;
+    use \traits\Speek;
+
     /**
+     * @param      $property
+     * @param null $value
+     * @param      $options
      *
+     * @return bool
      */
-    use \traits\Audible;
+    public function set($property, $value = null, $options)
+    {
+        if (is_array($property) && $value === null) {
+            foreach ($property as $key => $value) {
+                $this->set($key, $value);
+            }
+        } else {
+            $this->{$property} = $value;
+        }
+
+        return true;
+    }
 
     /**
+     * @param $property
+     * @param $options
      *
-     */
-    use \traits\Movable;
-
-    /**
-     * @return mixed
-     */
-    public function set(){ return $this; }
-
-    /**
-     * @return mixed
-     */
-    public function get(){ return $this; }
-
-    /**
-     * @return mixed
-     */
-    public function harvest(){ return $this; }
-
-    /**
-     * @return mixed
-     */
-    public function waste(){ return $this; }
-
-    /**
-     * @return mixed
-     */
-    public function breed(){ return $this; }
-
-    /**
-     * @return mixed
-     */
-    public function terminate(){ return $this; }
-
-    // static methods
-    /**
      * @return string
      */
-    public static function className(){ return (string)__CLASS__; }
+    public function get($property)
+    {
+        return $this->{$property};
+    }
+
+    /**
+     * @return mixed
+     */
+    function className(){ return $this; }
+
+    /**
+     * @return mixed
+     */
+    function birth(){ return $this; }
+
+    /**
+     * @return mixed
+     */
+    function maturation(){ return $this; }
+
+    /**
+     * @return mixed
+     */
+    function death(){ return $this; }
 }

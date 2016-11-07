@@ -10,32 +10,39 @@ namespace interfaces;
 interface Animal
 {
     /**
+     * @param $param
+     * @param $value
+     * @param $options
+     *
      * @return mixed
      */
-    function set();
+    function set($param, $value, $options);
+
+    /**
+     * @param $param
+     * @param $options
+     *
+     * @return mixed
+     */
+    function get($param);
 
     /**
      * @return mixed
      */
-    function get();
+    function className();
 
     /**
      * @return mixed
      */
-    function harvest();
+    function birth();
 
     /**
      * @return mixed
      */
-    function waste();
+    function maturation();
 
     /**
      * @return mixed
      */
-    function breed();
-
-    /**
-     * @return mixed
-     */
-    function terminate();
+    function death();
 }

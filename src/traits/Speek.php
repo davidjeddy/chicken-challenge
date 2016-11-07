@@ -5,9 +5,9 @@ namespace traits;
 use classes\ErrorChecking;
 
 /**
- * Class Audiable
+ * Class Speek
  */
-trait Audible
+trait Speek
 {
     /**
      * @param null $paramData

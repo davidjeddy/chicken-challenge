@@ -2,20 +2,17 @@
 
 namespace traits;
 
-// auto loading of classes
-use classes\ErrorChecking;
-
 /**
- * Class Movable
+ * Class Defecate
  */
-trait Feed
+trait Defecate
 {
     /**
      * @param array|null $paramData
      *
      * @return array
      */
-    public function feed(array $paramData = null)
+    public function defecate(array $paramData = null)
     {
 
         return $paramData;
