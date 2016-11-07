@@ -22,8 +22,7 @@ trait Move
         $class = explode('\\', $this::className());
         $class = strtolower(end($class));
 
-        echo  'The ' . $class . ' moves ' . $paramData['direction'] . ' for ' . $paramData['time'] . ' as a velocity of '
-            . $paramData['velocity'] . ' by ' . $paramData['method'] . ".\n";
+        echo  'The ' . $class . ' moves ' . $paramData['direction'] . ' for ' . $paramData['time'] . ' second at a velocity of ' . $paramData['velocity'] . ' m/s by ' . $paramData['method'] . ".\n";
 
         return $paramData;
     }

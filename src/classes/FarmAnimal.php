@@ -47,20 +47,8 @@ class FarmAnimal implements \interfaces\Animal
     /**
      * @return mixed
      */
-    static function className(){ return get_called_class(); }
-
-    /**
-     * @return mixed
-     */
-    function birth(){ return $this; }
-
-    /**
-     * @return mixed
-     */
-    function maturation(){ return $this; }
-
-    /**
-     * @return mixed
-     */
-    function death(){ return $this; }
+    static function className()
+    {
+        return get_called_class();
+    }
 }
