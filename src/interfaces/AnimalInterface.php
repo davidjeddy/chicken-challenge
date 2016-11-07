@@ -7,7 +7,7 @@ namespace interfaces;
  *
  * @package davidjeddy
  */
-interface Animal
+interface AnimalInterface
 {
     /**
      * @param $param
@@ -16,7 +16,7 @@ interface Animal
      *
      * @return mixed
      */
-    function set($param, $value, $options);
+    public function set($param, $value, $options);
 
     /**
      * @param $param
@@ -24,10 +24,10 @@ interface Animal
      *
      * @return mixed
      */
-    function get($param);
+    public function get($param);
 
     /**
      * @return mixed
      */
-    static function className();
+    public static function className();
 }

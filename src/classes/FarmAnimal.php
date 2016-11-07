@@ -2,7 +2,7 @@
 
 namespace classes;
 
-class FarmAnimal implements \interfaces\Animal
+class FarmAnimal implements \interfaces\AnimalInterface
 {
     use \traits\Defecate;
     use \traits\Eat;
@@ -47,7 +47,7 @@ class FarmAnimal implements \interfaces\Animal
     /**
      * @return mixed
      */
-    static function className()
+    public static function className()
     {
         return get_called_class();
     }

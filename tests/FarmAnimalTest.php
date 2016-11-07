@@ -36,6 +36,4 @@ class FarmAnimalTest extends TestCase
         $this->chicken->set('testAtt', ['qwer' => 1, 'asdf' =>2 , 'zxcv' => 3]);
         $this->assertEquals(['qwer' => 1, 'asdf' => 2 , 'zxcv' => 3], $this->chicken->testAtt);
     }
-
-
 }

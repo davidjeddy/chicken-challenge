@@ -19,6 +19,17 @@ tests.
  - Composer can be used to check PHP minimal requirements
  - Minimal 3rd part library usage, should not be core of demo
  
+# Badges
+[![Latest Stable Version](https://poser.pugx.org/davidjeddy/chicken-challenge/version)](https://packagist.org/packages/davidjeddy/chicken-challenge)
+[![Total Downloads](https://poser.pugx.org/davidjeddy/chicken-challenge/downloads)](https://packagist.org/packages/davidjeddy/chicken-challenge)
+[![Latest Unstable Version](https://poser.pugx.org/davidjeddy/chicken-challenge/v/unstable)](//packagist.org/packages/davidjeddy/chicken-challenge)
+[![License](https://poser.pugx.org/davidjeddy/chicken-challenge/license)](https://packagist.org/packages/davidjeddy/chicken-challenge)
+[![Monthly Downloads](https://poser.pugx.org/davidjeddy/chicken-challenge/d/monthly)](https://packagist.org/packages/davidjeddy/chicken-challenge)
+[![Daily Downloads](https://poser.pugx.org/davidjeddy/chicken-challenge/d/daily)](https://packagist.org/packages/davidjeddy/chicken-challenge)
+[![composer.lock available](https://poser.pugx.org/davidjeddy/chicken-challenge/composerlock)](https://packagist.org/packages/davidjeddy/chicken-challenge)
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d12edf84-11de-4efc-a7bf-fa3b17d19114/big.png)](https://insight.sensiolabs.com/projects/d12edf84-11de-4efc-a7bf-fa3b17d19114)
+
 # Installation
 
     cd {project root}
@@ -61,7 +72,6 @@ Testing requires PHPUnit, easiest way to get PHPUnit is via composer
 To ensure PSR-2 compliant occasionally run the following
 
     wget https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
-    php phpcs.phar --standard=PSR2 ./
     php phpcs.phar --standard=PSR2 --ignore="*/vendor/*","*/sapi/*" --report-diff=./PSR2.diff ./
     patch -p0 -ui ./PSR2.diff
     
