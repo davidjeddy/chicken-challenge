@@ -7,31 +7,35 @@ namespace interfaces;
  *
  * @package davidjeddy
  */
-interface FarmAnimal
+interface Animal
 {
+    /**
+     * @return mixed
+     */
+    function set();
 
     /**
      * @return mixed
      */
-    function body();
+    function get();
 
     /**
      * @return mixed
      */
-    function face();
+    function harvest();
 
     /**
      * @return mixed
      */
-    function legs();
+    function waste();
 
     /**
      * @return mixed
      */
-    function tail();
+    function breed();
 
     /**
      * @return mixed
      */
-    function color();
+    function terminate();
 }

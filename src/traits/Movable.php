@@ -22,6 +22,6 @@ trait Movable
         echo  'The ' . $this::className() . ' moves ' . $paramData['direction'] . ' for ' . $paramData['time'] . ' as a velocity of '
             . $paramData['velocity'] . ' by ' . $paramData['method'] . ".\n";
 
-        return $this;
+        return $paramData;
     }
 }

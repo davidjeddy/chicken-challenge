@@ -7,7 +7,7 @@ namespace classes;
  *
  * @package davidjeddy\classes
  */
-class Fowl
+class Fowl extends \classes\FarmAnimal
 {
     /**
      * @var
