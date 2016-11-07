@@ -31,7 +31,7 @@ IF Vagrant is available:
     vagrant up
     vagrant ssh
     
-IF docker is available
+IF docker is available (very early alpha, YMMV)
 
     docker-compose up --build
     docker exec -it chickenchallenge_app_1 bash
