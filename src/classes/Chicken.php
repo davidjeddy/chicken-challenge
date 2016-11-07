@@ -19,10 +19,8 @@ class Chicken extends \classes\Fowl
      *
      * Here we will pick random numbers to generate the attributes of the chicken.
      */
-    public function __construct($paramData)
+    public function __construct()
     {
-        $this->set('unknownAs', $paramData['knownAs']);
-
         // speak
         $this->sound([
             'db'   => \mt_rand(15, 85),

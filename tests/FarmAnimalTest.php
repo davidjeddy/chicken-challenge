@@ -5,7 +5,7 @@ $loader->addPsr4('', __DIR__.'/../src');
 
 use PHPUnit\Framework\TestCase;
 
-class ChickenTest extends TestCase
+class FarmAnimalTest extends TestCase
 {
     protected $chicken = null;
 
@@ -36,4 +36,6 @@ class ChickenTest extends TestCase
         $this->chicken->set('testAtt', ['qwer' => 1, 'asdf' =>2 , 'zxcv' => 3]);
         $this->assertEquals(['qwer' => 1, 'asdf' => 2 , 'zxcv' => 3], $this->chicken->testAtt);
     }
+
+
 }
