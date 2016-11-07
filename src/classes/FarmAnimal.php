@@ -7,7 +7,7 @@ class FarmAnimal implements \interfaces\Animal
     use \traits\Defecate;
     use \traits\Eat;
     use \traits\Move;
-    use \traits\Speek;
+    use \traits\Speak;
 
     /**
      * @param      $property

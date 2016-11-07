@@ -14,7 +14,8 @@
   "minimum-stability": "stable",
   "require": {
     "php" : ">=5.6.0",
-    "phpunit/phpunit":"^5.6"
+    "phpunit/phpunit":"^5.6",
+    "php-school/cli-menu": "^2.0"
   },
   "config": {
     "bin-dir": "./vendor/bin",

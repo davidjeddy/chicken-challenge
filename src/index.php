@@ -6,7 +6,7 @@ $movementType = ['walking', 'fluttering', 'hopping'];
 $soundType = ['cluck', 'cakaa', 'peek'];
 
 // create a chicken
-$chicken = new \classes\Chicken();
+$chicken = new \classes\Chicken;
 
 $chicken->set('color', 'yellow')
         ->set('legs', 'thin legged')
@@ -32,3 +32,4 @@ $chicken->sound([
     'type' => $soundType[\mt_rand(0, 2)],
     'db' => \mt_rand(40, 90),
 ]);
+
