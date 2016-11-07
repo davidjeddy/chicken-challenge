@@ -27,7 +27,7 @@ class Chicken extends \classes\Fowl
             'type' => self::randomArrayValue(['cluck', 'tuck-tuck', 'screeeech']),
         ]);
 
-        // move;
+        // move
         $this->move([
             'direction' => self::randomArrayValue(['north', 'east', 'south', 'west']),
             'time'      => \mt_rand(1, 10),
