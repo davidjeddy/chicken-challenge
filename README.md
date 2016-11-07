@@ -49,7 +49,7 @@ Testing requires PHPUnit, easiest way to get PHPUnit is via composer
 
 Now we can test 
 
-    php phpunit.phar --bootstrap ./src/autoload.php -c ./tests/phpunit.xml
+    php ./vendor/bin/phpunit ./tests 
    
 # Coding style
 
@@ -60,8 +60,14 @@ To ensure PSR-2 compliant occasionally run the following
 ## Report
     php phpcs.phar --standard=PSR2 ./
 ## Auto fixing
-    php phpcs.phar --standard=PSR2 --ignore=*/vendor/* --report-diff=./PSR2.diff ./
+    php phpcs.phar --standard=PSR2 --ignore="*/vendor/*","*/sapi/*" --report-diff=./PSR2.diff ./
     patch -p0 -ui ./PSR2.diff
+    
+# Auto Generating Documentation
+ * Note: GraphViz is required to generate inheratnce tree visuals.
+    
+    wget http://phpdoc.org/phpDocumentor.phar
+    php phpDocumentor.phar -p -t ./sapi -d ./src
     
 # Side Note
 I'd like to point out that one requirement is 'no external dependencies',

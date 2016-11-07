@@ -30,19 +30,4 @@ interface Animal
      * @return mixed
      */
     static function className();
-
-    /**
-     * @return mixed
-     */
-    function birth();
-
-    /**
-     * @return mixed
-     */
-    function maturation();
-
-    /**
-     * @return mixed
-     */
-    function death();
 }

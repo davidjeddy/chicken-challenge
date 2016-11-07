@@ -22,7 +22,7 @@ trait Eat
         $class = explode('\\', $this::className());
         $class = strtolower(end($class));
 
-        echo  'The ' . $class . ' eats ' . $paramData['quantity'] . ' kilos of  ' . $paramData['type'] . ' with ' . $paramData['veracity'] . ' veracity.';
+        echo  'The ' . $class . ' eats a ' . $paramData['quantity'] . ' helping of ' . $paramData['type'] . ' with ' . $paramData['veracity'] . ' veracity.' . "\n";
 
         return $paramData;
     }

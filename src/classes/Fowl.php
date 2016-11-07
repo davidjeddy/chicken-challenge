@@ -12,20 +12,10 @@ class Fowl extends \classes\FarmAnimal
     /**
      * @var
      */
-    protected $type;
-
-    /**
-     *
-     */
     protected $usage;
-
-    /**
-     *
-     */
-    protected $knownAs;
 
     /**
      * @var
      */
-    public $attributes;
+    protected $knownAs;
 }
