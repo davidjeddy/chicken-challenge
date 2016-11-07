@@ -2,12 +2,13 @@
 
 namespace traits;
 
+// auto loading of classes
 use classes\ErrorChecking;
 
 /**
- * Class Speek
+ * Class Speak
  */
-trait Speek
+trait Speak
 {
     /**
      * @param null $paramData
@@ -21,8 +22,7 @@ trait Speek
         $class = explode('\\', $this::className());
         $class = strtolower(end($class));
 
-        echo  'The ' . $class . ' makes a ' . $paramData['type'] . ' sounds at ' . $paramData['db']
-            . ' decibels'  . ".\n";
+        echo  'The ' . $class . ' makes a ' . $paramData['type'] . ' sounds at ' . $paramData['db']  . ' decibels'  . ".\n";
 
         return $paramData;
     }
