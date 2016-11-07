@@ -20,3 +20,6 @@
 2330 back to it, adding basic functionality to Chicken class
 0000 Time over, sadly could not figure out why PHPUnit is throwing an
     error on any second usage of $this->asserts*()
+    
+1900 Started on Iteration 2 applying provided feedback to project
+     Added phpunit and composer autoloading to project

@@ -2,12 +2,13 @@
 
 namespace traits;
 
+// auto loading of classes
 use classes\ErrorChecking;
 
 /**
- * Class Audiable
+ * Class Speak
  */
-trait Audible
+trait Speak
 {
     /**
      * @param null $paramData
@@ -18,8 +19,10 @@ trait Audible
     {
         ErrorChecking::checkRequirements(['db', 'type'], $paramData);
 
-        echo  'The ' . $this::className() . ' makes a ' . $paramData['type'] . ' sounds at ' . $paramData['db']
-            . ' decibels'  . ".\n";
+        $class = explode('\\', $this::className());
+        $class = strtolower(end($class));
+
+        echo  'The ' . $class . ' makes a ' . $paramData['type'] . ' sounds at ' . $paramData['db']  . ' decibels'  . ".\n";
 
         return $paramData;
     }
