@@ -29,7 +29,7 @@ interface Animal
     /**
      * @return mixed
      */
-    function className();
+    static function className();
 
     /**
      * @return mixed

@@ -12,11 +12,11 @@ class FarmAnimal implements \interfaces\Animal
     /**
      * @param      $property
      * @param null $value
-     * @param      $options
+     * @param null $options
      *
-     * @return bool
+     * @return $this
      */
-    public function set($property, $value = null, $options)
+    public function set($property, $value = null, $options = null)
     {
         if (is_array($property) && $value === null) {
             foreach ($property as $key => $value) {
@@ -26,7 +26,7 @@ class FarmAnimal implements \interfaces\Animal
             $this->{$property} = $value;
         }
 
-        return true;
+        return $this;
     }
 
     /**
@@ -37,13 +37,17 @@ class FarmAnimal implements \interfaces\Animal
      */
     public function get($property)
     {
-        return $this->{$property};
+        if (!empty($this->{$property})) {
+            return $this->{$property};
+        }
+
+        return false;
     }
 
     /**
      * @return mixed
      */
-    function className(){ return $this; }
+    static function className(){ return get_called_class(); }
 
     /**
      * @return mixed

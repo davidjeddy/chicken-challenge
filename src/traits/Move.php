@@ -19,7 +19,10 @@ trait Move
     {
         ErrorChecking::checkRequirements(['direction', 'time', 'velocity', 'method'], $paramData);
 
-        echo  'The ' . $this::className() . ' moves ' . $paramData['direction'] . ' for ' . $paramData['time'] . ' as a velocity of '
+        $class = explode('\\', $this::className());
+        $class = strtolower(end($class));
+
+        echo  'The ' . $class . ' moves ' . $paramData['direction'] . ' for ' . $paramData['time'] . ' as a velocity of '
             . $paramData['velocity'] . ' by ' . $paramData['method'] . ".\n";
 
         return $paramData;

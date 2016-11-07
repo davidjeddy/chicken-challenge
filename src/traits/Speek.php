@@ -18,7 +18,10 @@ trait Speek
     {
         ErrorChecking::checkRequirements(['db', 'type'], $paramData);
 
-        echo  'The ' . $this::className() . ' makes a ' . $paramData['type'] . ' sounds at ' . $paramData['db']
+        $class = explode('\\', $this::className());
+        $class = strtolower(end($class));
+
+        echo  'The ' . $class . ' makes a ' . $paramData['type'] . ' sounds at ' . $paramData['db']
             . ' decibels'  . ".\n";
 
         return $paramData;
