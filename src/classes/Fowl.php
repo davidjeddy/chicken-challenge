@@ -23,4 +23,9 @@ class Fowl extends \classes\FarmAnimal
      *
      */
     protected $knownAs;
+
+    /**
+     * @var
+     */
+    public $attributes;
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace classes;
+
 /**
  * Class chicken
  *
