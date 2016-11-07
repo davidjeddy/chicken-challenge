@@ -6,7 +6,6 @@
 spl_autoload_register(function ($className) {
     $className = ltrim($className, '\\');
     $fileName  = '';
-    $namespace = '';
 
     if ($lastNsPos = strrpos($className, '\\')) {
         $namespace = substr($className, 0, $lastNsPos);
@@ -18,3 +17,5 @@ spl_autoload_register(function ($className) {
 
     require_once $fileName;
 });
+
+require_once __DIR__ . '/../vendor/autoload.php';
