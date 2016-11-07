@@ -1,15 +1,15 @@
 {
-  "name": "davidjeddy/chickenChallenge",
+  "name": "davidjeddy/chicken-challenge",
   "description": "Create a chicken in 4 hours with NO external dependencies or extensions.",
   "keywords": [
     "chicken",
     "challenge"
   ],
-  "homepage": "https://github.com/davidjeddy/chickenChallenge.git",
+  "homepage": "https://github.com/davidjeddy/chicken-challenge.git",
   "type": "application",
   "license": "MIT",
   "support": {
-    "source": "https://github.com/davidjeddy/chickenChallenge/issues"
+    "source": "https://github.com/davidjeddy/chicken-challenge/issues"
   },
   "minimum-stability": "stable",
   "require": {
