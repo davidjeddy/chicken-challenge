@@ -1,0 +1,5 @@
+app:
+  image: php:7-fpm
+  working_dir: /code
+  volumes:
+    - ./:/code
